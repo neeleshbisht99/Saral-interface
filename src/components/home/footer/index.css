@@ -1,0 +1,39 @@
+/* .footer-hr-line
+{
+width:82%;
+height:1px;
+background: #8a989e;
+margin:auto;
+} */
+.footerContainer
+{
+    width:100%;
+    background-image:  linear-gradient(to bottom, #f0f4f6, #fff);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: CeraproMedium;
+   padding-bottom: 100px;
+}
+
+.footerContainer > .logo, .footerContainer > .address
+{
+    margin:auto;
+}
+
+.footerContainer > .para
+{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:auto;
+}
+
+.footerContainer > .para > .contact
+{
+    width:100%;
+    text-align: center;
+    display: inline-block;
+}
+.footerContainer > .para > .contact > span
+{
+    padding-left: 5px;
+}

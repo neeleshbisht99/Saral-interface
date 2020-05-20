@@ -1,0 +1,37 @@
+.countCompareContainer
+{
+    width:100%;
+}
+.countCompareContainer > .countCompareGridWrapper {
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6em;
+  }
+ 
+  .countCompareContainer > .countCompareGridWrapper > .countCompareVideoContainer
+ {
+     margin: auto;
+ } 
+
+
+ .countCompareContainer > .countCompareGridWrapper > .countCompareContentContainer > .heading
+ {
+    max-width: 80%;
+    margin-bottom: 16px;
+    color: #485160;
+    font-family: CeraproMedium, sans-serif;
+    font-size: 32px;
+    line-height: 1.3em;
+    font-weight: 500;
+ }
+
+ .countCompareContainer > .countCompareGridWrapper > .countCompareContentContainer > .paragraph
+ {
+    margin-bottom: 0px;
+    font-family: CeraproLight, sans-serif;
+    color: #8a989e;
+    font-size: 20px;
+    line-height: 1.8em;
+    font-weight: 400;
+ }

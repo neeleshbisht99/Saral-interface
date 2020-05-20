@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: CeraproMedium;
+  src: url("./fonts/cerapro/Cera\ Pro\ Medium.otf");
+}
+@font-face {
+  font-family: CeraproLight;
+  src: url("./fonts/cerapro/Cera\ Pro\ Light.otf");
+}
+@font-face {
+  font-family: CeraproBold;
+  src: url("./fonts/cerapro/Cera\ Pro\ Bold.otf");
+}
+@font-face {
+  font-family: CeraproBlack;
+  src: url("./fonts/cerapro/Cera\ Pro\ Black.otf");
+}
+

@@ -1,0 +1,16 @@
+.mainContentContainer
+{
+    width:86%;
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-perspective: 1510px;
+    perspective: 1510px;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    margin-top:120px;
+}
+.mainContentContainer > .contentFinder
+{
+    margin-bottom: 140px;
+}

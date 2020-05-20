@@ -1,0 +1,52 @@
+.cardBackReachBanner {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 30px 35px 50px -30px rgba(0, 0, 0, 0.2);
+    overflow:hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    /* z-index:1; */
+}
+.cardBackReachBanner > .cardContainer
+{
+    width:50%;
+    margin:auto;
+    display:grid;
+    grid-template-rows: 50px 1fr 50px ;
+    grid-row-gap:1em;
+}
+.cardBackReachBanner > .cardContainer > .cardHead
+{
+    margin:auto;
+    font-family: CeraproBold;
+    font-size:30px;
+    color: #485160;
+}
+.cardBackReachBanner > .cardContainer > .cardBody
+{
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-row-gap:10px;;
+    overflow: hidden;
+}
+.cardBackReachBanner > .cardContainer > .cardBody > .nameCard
+{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-column-gap: 1em;
+}
+
+.cardBackReachBanner > .cardContainer > .cardSubmit,.cardBackReachBanner > .cardContainer > .cardSubmit > .cardLinks
+{
+    display: inline-block;
+    /* margin:auto; */
+}
+
+cardBackReachBanner > .cardContainer > .cardSubmit,.cardBackReachBanner > .cardContainer > .cardSubmit > .cardLinks{
+    float:right;
+}
+.cardBackReachBanner > .cardContainer > .cardLinks > span
+{
+    padding-left:2rem;
+}

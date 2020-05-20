@@ -1,0 +1,37 @@
+.shareContainer
+{
+    width:100%;
+}
+.shareContainer > .shareGridWrapper {
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6em;
+  }
+
+  .shareContainer > .shareGridWrapper > .shareVideoContainer
+ {
+     margin: auto;
+ } 
+
+
+ .shareContainer > .shareGridWrapper > .shareContentContainer > .heading
+ {
+    max-width: 80%;
+    margin-bottom: 16px;
+    color: #485160;
+    font-family: CeraproMedium, sans-serif;
+    font-size: 32px;
+    line-height: 1.3em;
+    font-weight: 500;
+ }
+
+ .shareContainer > .shareGridWrapper > .shareContentContainer > .paragraph
+ {
+    margin-bottom: 0px;
+    font-family: CeraproLight, sans-serif;
+    color: #8a989e;
+    font-size: 20px;
+    line-height: 1.8em;
+    font-weight: 400;
+ }
