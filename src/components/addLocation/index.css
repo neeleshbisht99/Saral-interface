@@ -1,0 +1,58 @@
+.prose-add-location-modal {
+  text-align: center;
+  font-family: CeraproMedium;
+  width: auto;
+  height: 550px;
+}
+
+.prose-add-location-modal > p {
+  background-color: #273d56;
+  color: #fff;
+  margin: auto;
+  font-size: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.prose-add-location-modal > .main-content-add-location-modal {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 1em;
+  text-align: left;
+  padding-top: 1em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.prose-add-location-modal
+  > .main-content-add-location-modal
+  > .add-location-address {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  grid-column-gap: 2em;
+}
+
+.prose-add-location-modal
+  > .main-content-add-location-modal
+  > .add-location-address2,
+.prose-add-location-modal
+  > .main-content-add-location-modal
+  > .add-location-coordinates {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+}
+
+.prose-add-location-modal
+  > .main-content-add-location-modal
+  > .add-location-coordinates
+  > .location {
+  margin: auto;
+}
+
+.prose-add-location-modal
+  > .main-content-add-location-modal
+  > .add-location-button {
+  margin: auto;
+}

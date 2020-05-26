@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import pollutionVideo from '../../../videos/output.webm';
+import pollutionVideo from '../../../videos/home-new.webm';
 import Navbar from './navbar';
 import Content from './content';
 

@@ -1,16 +1,20 @@
-import React from 'react';
-import logo from '../../../../img/logo.svg';
-import './index.css';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { configureAddLocationModalBool } from '../../../../store/actions';
-import Button from '@mapbox/mr-ui/button';
+import { configureAddLocationModalBool } from '../../store/actions';
+import logo from '../../img/logo.svg';
+import './index.css';
 
-function Navbar(props) {
+function Appbar(props) {
   const { configureAddLocationModalBool } = props;
+
+  const [active, setActive] = useState('Home');
+  const changeTab = id => {
+    setActive(id);
+  };
 
   return (
     <React.Fragment>
-      <div className="navContainer">
+      <div className="appbarContainer ">
         {/* navigation menu */}
         <div className="main-nav ">
           <div className="nav-tab">
@@ -98,23 +102,6 @@ function Navbar(props) {
     </React.Fragment>
   );
 }
-
 export default connect(store => ({}), { configureAddLocationModalBool })(
-  Navbar,
+  Appbar,
 );
-
-// Navbar - button
-
-{
-  /* <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="9px" viewBox="0 0 24 9" version="1.1">
-    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
-    <title>menu-transparent</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="menu-transparent" fill="#FFFFFF" fill-rule="nonzero">
-            <rect id="Rectangle-9" x="0" y="0" width="24" height="2" rx="1"/>
-            <rect id="Rectangle-9-Copy-2" x="0" y="7" width="24" height="2" rx="1"/>
-        </g>
-    </g>
-</svg> */
-}

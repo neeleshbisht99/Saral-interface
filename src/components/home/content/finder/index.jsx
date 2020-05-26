@@ -3,7 +3,7 @@ import IconText from '@mapbox/mr-ui/icon-text';
 import ControlText from '@mapbox/mr-ui/control-text';
 import Button from '@mapbox/mr-ui/button';
 import './index.css';
-import finderVideo from '../../../../videos/adverty-1.mp4';
+import finderVideo from '../../../../videos/finder.webm';
 
 function Finder() {
   const handleChange = (value, id) => {};

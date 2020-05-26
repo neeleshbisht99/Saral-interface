@@ -56,5 +56,17 @@
    opacity:1;
 }
 
+.main-nav > .add-location-badge
+{
+    margin:auto;
+    opacity:1;
+}
 
-
+.main-nav > .add-location-badge > button
+{
+    /* z-index:21; */
+    opacity:1;
+    cursor: pointer;
+    color:#fff;
+    margin:auto;
+}

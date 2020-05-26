@@ -8,7 +8,7 @@ const RouteViews = () => (
     <BrowserRouter>
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
-        <Route exact path="/map" render={() => <MapPage />} />
+        <Route exact path="/mapviewer" render={() => <MapPage />} />
       </Switch>
     </BrowserRouter>
   </React.Fragment>

@@ -1,5 +1,7 @@
 import React from 'react';
 import './index.css';
+import rightPathVideo from '../../../../../videos/rightPath.webm';
+import Icon from '@mapbox/mr-ui/icon';
 
 function RightPath() {
   const handleChange = (value, id) => {};
@@ -16,6 +18,13 @@ function RightPath() {
               <br></br>
               We are single-mindedly focussed to make earth clean & bring back
               human values.
+              <br />
+              <br />
+              <span className="inline-block color-blue">
+                <a href="#">
+                  Get the right Path <Icon name="arrow-right" inline={true} />
+                </a>
+              </span>{' '}
             </p>
           </div>
           <div className="rightPathVideoContainer">
@@ -28,7 +37,7 @@ function RightPath() {
                 left: 0,
                 top: 0,
               }}>
-              {/* <source src={finderVideo} type="video/webm" /> */}
+              {/* <source src={rightPathVideo} type="video/webm" /> */}
             </video>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Map from '../map/mapBox';
-import Appbar from '../appbar/appbar';
+import Appbar from '../appbar';
 
 // import Map from '../map/googleMap';
 // const GOOGLE_MAP_URL ="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYBjH5tZWtI7yNeI95JmBRwuDtDKfCf9Y&v=3.exp&libraries=geometry,drawing,places";
@@ -12,7 +12,7 @@ import Appbar from '../appbar/appbar';
       mapElement={<div style={{ height: `100%` }} />}
       /> */
 }
-function Looker() {
+function MapViewer() {
   const [userCoordinates, setUserCoordinates] = React.useState({
     longitude: '-122.8',
     latitude: '37.4',
@@ -30,16 +30,11 @@ function Looker() {
     <React.Fragment>
       <div className="classHome viewport-full">
         <Appbar />
-        {/* <div className="col col--2 ">
-              <div className="mt12">
-              <Menu getUserCoordinates={getUserCoordinates}/>
-              </div>
-           </div> */}
-        <div className="h-auto w-full mt6 ">
+        <div className="h-auto w-full mt3 ">
           <Map focusCoordinates={userCoordinates} />
         </div>
       </div>
     </React.Fragment>
   );
 }
-export default Looker;
+export default MapViewer;

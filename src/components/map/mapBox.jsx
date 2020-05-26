@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ReactMapGL, { GeolocateControl } from 'react-map-gl';
-import GeolocateController from '../mapMenu/geolocateController/geolocateController';
-import GeocoderController from '../mapMenu/geocoderController/geocoderController';
+import GeolocateController from './mapMenu/geolocateController';
+import GeocoderController from './mapMenu/geocoderController';
 import { gatherMarkers } from './mapMarkerLayer/gatherMarkers';
 import MapMarkerLayer from './mapMarkerLayer';
 
@@ -53,7 +53,7 @@ function Map(props) {
           mapRef={mapRef}
         />
         <GeolocateController />
-        <MapMarkerLayer markers={viewportMarkers} />
+        {/* <MapMarkerLayer markers={viewportMarkers} /> */}
       </ReactMapGL>
     </div>
   );

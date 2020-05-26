@@ -29,16 +29,24 @@ function Footer() {
           <br />
           <div className="contact">
             <span className="inline-block color-blue">
-              <Icon name="linkedin" inline={false} size={33} />
+              <a href="https://www.linkedin.com/in/neelesh-bisht-398061b4/">
+                <Icon name="linkedin" inline={false} size={33} />
+              </a>
             </span>
             <span className="inline-block color-red">
-              <Icon name="mail" inline={false} size={33} />
+              <a href="mailto:neeleshbisht99@gmail.com">
+                <Icon name="mail" inline={false} size={33} />
+              </a>
             </span>
             <span className="inline-block color-blue">
-              <Icon name="twitter" inline={false} size={33} />
+              <a href="https://twitter.com/neeleshbisht99">
+                <Icon name="twitter" inline={false} size={33} />
+              </a>
             </span>
             <span className="inline-block color-black">
-              <Icon name="github" inline={false} size={33} />
+              <a href="https://github.com/neeleshbisht99">
+                <Icon name="github" inline={false} size={33} />
+              </a>
             </span>
           </div>
         </div>

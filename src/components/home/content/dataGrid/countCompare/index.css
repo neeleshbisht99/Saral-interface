@@ -35,3 +35,14 @@
     line-height: 1.8em;
     font-weight: 400;
  }
+ .countCompareContainer > .countCompareGridWrapper > .countCompareContentContainer > .paragraph > span
+ {
+    font-family: CeraproBold, sans-serif;
+    background-image: linear-gradient(180deg, transparent 93%, #448ee4 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .4s ease;
+ }
+ .countCompareContainer > .countCompareGridWrapper > .countCompareContentContainer > .paragraph > span:hover {
+    background-size: 100% 100%;
+  }
