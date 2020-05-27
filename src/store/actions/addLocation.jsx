@@ -1,24 +1,11 @@
-import {
-  SET_ADD_LOCATION_BOOL,
-  SET_ADD_LOCATION_FORM_SUBMIT_STATUS,
-} from '../actionTypes';
+import { SET_ADD_LOCATION_BOOL } from '../actionTypes';
 import { addError, removeError } from './error';
+import { setFormSubmitStatus } from './notification';
 import API from '../../services/api';
 
 export const setAddLocationBool = addLocationBool => ({
   type: SET_ADD_LOCATION_BOOL,
   addLocationBool,
-});
-
-export const setAddLocationFormSubmitStatus = (
-  addLocationStatus,
-  alertOpen,
-  theme,
-) => ({
-  type: SET_ADD_LOCATION_FORM_SUBMIT_STATUS,
-  addLocationStatus,
-  alertOpen,
-  theme,
 });
 
 export const configureAddLocationModalBool = val => {
@@ -33,29 +20,24 @@ export const configureAddLocationModalBool = val => {
   };
 };
 
-export const configureAddLocationFormSubmit = (data, alertOpen) => {
-  if (!alertOpen) {
-    return dispatch => {
-      dispatch(setAddLocationFormSubmitStatus('', alertOpen));
-    };
-  }
+export const configureAddLocationFormSubmit = data => {
   return async dispatch => {
     try {
       const addLocationStatus = await API.call('post', `addLocation`, data);
       console.log(addLocationStatus);
       if (addLocationStatus.status == 201) {
         dispatch(
-          setAddLocationFormSubmitStatus(
+          setFormSubmitStatus(
             'Location uploaded sucessfully !',
-            alertOpen,
+            true,
             'success',
           ),
         );
       } else {
         dispatch(
-          setAddLocationFormSubmitStatus(
+          setFormSubmitStatus(
             'Location upload failed. Please try again !',
-            alertOpen,
+            true,
             'error',
           ),
         );

@@ -6,7 +6,7 @@ import rootReducer from './reducers';
 const DEFAULT_STATE = {
   addLocationBool: { modalOpen: false },
   error: { message: null },
-  addLocationFormSubmitStatus: {
+  formSubmitStatus: {
     alertOpen: false,
     status: '',
     theme: 'success',

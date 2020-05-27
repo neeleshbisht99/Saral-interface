@@ -1,14 +1,14 @@
 import React from 'react';
 import ControlAlert from '@mapbox/mr-ui/control-alert';
 import { connect } from 'react-redux';
-import { configureAddLocationFormSubmit } from '../../store/actions';
+import { closeNotificationAlert } from '../../store/actions';
 import './index.css';
 
 function Notification(props) {
-  const { alertOpen, status, theme } = props.addLocationFormSubmitStatus;
-  const { configureAddLocationFormSubmit } = props;
+  const { alertOpen, status, theme } = props.formSubmitStatus;
+  const { closeNotificationAlert } = props;
   function toggleAlert() {
-    configureAddLocationFormSubmit({}, false);
+    closeNotificationAlert();
   }
   return (
     <React.Fragment>
@@ -29,7 +29,7 @@ function Notification(props) {
 
 export default connect(
   store => ({
-    addLocationFormSubmitStatus: store.addLocationFormSubmitStatus,
+    formSubmitStatus: store.formSubmitStatus,
   }),
-  { configureAddLocationFormSubmit },
+  { closeNotificationAlert },
 )(Notification);

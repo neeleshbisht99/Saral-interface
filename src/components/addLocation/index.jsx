@@ -38,7 +38,7 @@ function AddLocation(props) {
   };
 
   function handleAddLocationFormSubmit() {
-    configureAddLocationFormSubmit(formValues, true);
+    configureAddLocationFormSubmit(formValues);
     closeModal();
   }
 

@@ -1,12 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import IconText from '@mapbox/mr-ui/icon-text';
 import ControlText from '@mapbox/mr-ui/control-text';
 import ControlTextarea from '@mapbox/mr-ui/control-textarea';
 import Button from '@mapbox/mr-ui/button';
 import Icon from '@mapbox/mr-ui/icon';
-function CardBack() {
-  const handleChange = (value, id) => {};
+import { connect } from 'react-redux';
+import { configureSendMessageFormSubmit } from '../../../../store/actions';
+
+function CardBack(props) {
+  const { configureSendMessageFormSubmit } = props;
+
+  const [reachFormValues, setReachFormValues] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (value, id) => {
+    setReachFormValues({ ...reachFormValues, [id]: value });
+  };
+
+  function handleReachFormSubmit() {
+    configureSendMessageFormSubmit(reachFormValues);
+    setReachFormValues({ name: '', email: '', message: '' });
+  }
 
   return (
     <React.Fragment>
@@ -16,27 +34,33 @@ function CardBack() {
           <div className="cardBody">
             <div className="nameCard">
               <div>
-                <ControlText id="basic" onChange={handleChange} label="Name" />
+                <ControlText
+                  id="name"
+                  onChange={handleChange}
+                  label="Name"
+                  value={reachFormValues.name}
+                />
               </div>
               <div>
                 <ControlText
-                  id="basic"
+                  id="email"
                   onChange={handleChange}
                   label="E-Mail"
+                  value={reachFormValues.email}
                 />
               </div>
             </div>
             <div className="messageCard">
               <ControlTextarea
-                id="story"
+                id="message"
                 label="Message"
                 onChange={handleChange}
-                // value={this.state.value}
+                value={reachFormValues.message}
               />
             </div>
           </div>
           <div className="cardSubmit">
-            <Button onClick={() => {}} outline={true}>
+            <Button onClick={handleReachFormSubmit} outline={true}>
               <IconText iconAfter="arrow-right">Send Message</IconText>
             </Button>
             <div className="cardLinks">
@@ -87,4 +111,6 @@ function CardBack() {
     </React.Fragment>
   );
 }
-export default CardBack;
+export default connect(store => ({}), { configureSendMessageFormSubmit })(
+  CardBack,
+);
