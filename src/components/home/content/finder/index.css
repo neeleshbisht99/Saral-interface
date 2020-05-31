@@ -1,119 +1,154 @@
-.finderContainer
-{
-    width:100%;
+.finderContainer {
+  width: 100%;
 }
 
-.finderContainer > .hashtag
-{
-    text-align: center;
-    padding-bottom:30px;
-    color:#8a989e;
-    font-size:30px;
-    font-family:CeraproMedium;
+.finderContainer > .hashtag {
+  text-align: center;
+  padding-bottom: 30px;
+  color: #8a989e;
+  font-size: 30px;
+  font-family: CeraproMedium;
 }
 
 .finderGridWrapper {
-    width:100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 6em;
-  }
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 6em;
+}
 
- .finderContainer > .finderGridWrapper > .finderVideoContainer
- {
-     margin: auto;
- } 
+.finderContainer > .finderGridWrapper > .finderVideoContainer {
+  margin: auto;
+}
 
- .finderContainer > .finderGridWrapper > .finderContentContainer
- {
-     display:grid;
-     grid-template-rows: 1fr;
-     grid-row-gap:1em;
-     margin-left:10%;
-     margin-right:10%;
-     /* margin-left:auto; */
-     /* margin-right: auto; */
- }
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderNearMe 
- {
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
- }
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderNearMe > Button
- {
-     font-size:1em;
-     align-content: center;
- }
- .finderContainer > .finderGridWrapper > .finderContentContainer > .horizontal-line
- {
-     height:0.09em;
-     background-color: #ccc;
-     /* border:0.09em solid #8a989e; */
- }
+.finderContainer > .finderGridWrapper > .finderContentContainer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* margin-left:auto; */
+  /* margin-right: auto; */
+}
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderNearMe {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderNearMe
+  > a
+  > Button {
+  font-size: 1em;
+  align-content: center;
+}
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .horizontal-line {
+  height: 0.09em;
+  background-color: #ccc;
+  /* border:0.09em solid #8a989e; */
+}
 
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress
- {
-     width: 100%;
-     align-content : center;
-     display: grid;
-     grid-row-gap: 1em;
- }
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .countryAddress
- {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-column-gap: 1em;
- }
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress {
+  width: 100%;
+  align-content: center;
+  display: grid;
+  grid-row-gap: 1em;
+}
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .countryAddress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
 
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .coordinates
- {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-column-gap: 1em;
- }
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .coordinates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
 
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .horizontal-line-or
- {
-     width:70%;
-     display: grid;
-     grid-template-columns: 4fr 2fr 4fr;
-     grid-column-gap: 0.1em;
-     margin:auto;
- }
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .horizontal-line-or > .line-wrapper 
- {
-     margin-top:auto;
-     margin-bottom:auto;
- }
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .horizontal-line-or >  .line-wrapper-right
- {
-     margin-right:auto;
- }
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .horizontal-line-or > .line-wrapper-left
- {
-     margin-left:auto;
- }
- 
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .horizontal-line-or > .line-wrapper >.line
- {
-    height:1px;
-    width:80px;
-    background-color: #ccc;
- }
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .horizontal-line-or {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 4fr 2fr 4fr;
+  grid-column-gap: 0.1em;
+  margin: auto;
+}
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .horizontal-line-or
+  > .line-wrapper {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .horizontal-line-or
+  > .line-wrapper-right {
+  margin-right: auto;
+}
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .horizontal-line-or
+  > .line-wrapper-left {
+  margin-left: auto;
+}
 
- .finderContainer > .finderGridWrapper > .finderContentContainer > .finderAddress > .horizontal-line-or > .or 
- {
-     margin:auto;
-     font-size: 12px;
-     line-height: 18px;
-     font-weight: bold 
- }
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .horizontal-line-or
+  > .line-wrapper
+  > .line {
+  height: 1px;
+  width: 80px;
+  background-color: #ccc;
+}
 
- .finderContainer > .inderGridWrapper > .finderContentContainer > .submitFinder
- {
-     margin-top:10px;
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
- }
+.finderContainer
+  > .finderGridWrapper
+  > .finderContentContainer
+  > .finderAddress
+  > .horizontal-line-or
+  > .or {
+  margin: auto;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.finderContainer > .inderGridWrapper > .finderContentContainer > .submitFinder {
+  margin-top: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

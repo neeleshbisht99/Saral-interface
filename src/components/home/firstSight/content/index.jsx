@@ -13,18 +13,22 @@ function Content() {
             Joining hands to create a better future
           </div>
           <div className="mappingButton">
-            <Button
-              passthroughProps={{ 'aria-label': 'Primary' }}
-              size="large"
-              width="large">
-              Let's make it !
-            </Button>
-            <Button
-              passthroughProps={{ 'aria-label': 'Primary' }}
-              size="large"
-              width="large">
-              Spread it out !
-            </Button>
+            <a href="mapViewer">
+              <Button
+                passthroughProps={{ 'aria-label': 'Primary' }}
+                size="large"
+                width="large">
+                Let's make it !
+              </Button>
+            </a>
+            <a href="#">
+              <Button
+                passthroughProps={{ 'aria-label': 'Primary' }}
+                size="large"
+                width="large">
+                Spread it out !
+              </Button>
+            </a>
           </div>
         </div>
       </div>

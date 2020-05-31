@@ -11,6 +11,11 @@ const DEFAULT_STATE = {
     status: '',
     theme: 'success',
   },
+  mapViewerInitialState: {
+    recievedLocationFromUser: false,
+    addressPresent: false,
+    coordinatesPresent: false,
+  },
 };
 
 export const store = createStore(

@@ -4,6 +4,8 @@ import GeolocateController from './mapMenu/geolocateController';
 import GeocoderController from './mapMenu/geocoderController';
 import { gatherMarkers } from './mapMarkerLayer/gatherMarkers';
 import MapMarkerLayer from './mapMarkerLayer';
+import { connect } from 'react-redux';
+import $ from 'jquery';
 
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoibmVlbGVzaGJpc2h0IiwiYSI6ImNrODJtdTB6djAxaHkzbW9kMjljMjU0N24ifQ.QrotGUZ6WIwCEYXXH9MlXw';
@@ -11,15 +13,53 @@ const MAPBOX_STYLE = 'mapbox://styles/neeleshbisht/ck82n74a420ge1inu84yfo7f3';
 
 function Map(props) {
   const mapRef = useRef(null);
+  const { mapViewerInitialState } = props;
+
+  const [viewportMarkers, setViewportMarkers] = useState([]);
   const [viewport, setViewport] = useState({
-    latitude: 1,
-    longitude: 1,
-    zoom: 4,
+    latitude: 20.4,
+    longitude: 30.8,
+    zoom: 1.45,
     bearing: 0,
     pitch: 0,
   });
+  var clickEvent = new MouseEvent('click', {
+    view: window,
+    bubbles: true,
+    cancelable: false,
+  });
+  useEffect(() => {
+    if (!mapViewerInitialState.recievedLocationFromUser) {
+      /*
+       
 
-  const [viewportMarkers, setViewportMarkers] = useState([]);
+      trigger() method not exposed , make sure it is exposed then replace the hack with it.
+
+      */
+      setTimeout(function () {
+        $('.mapboxgl-ctrl-geolocate').click();
+      }, 5000);
+    } else {
+      if (mapViewerInitialState.addressPresent) {
+        var address = mapViewerInitialState.address;
+        var country = mapViewerInitialState.country;
+        /*
+        
+        
+        do geocoding
+        
+        */
+      } else {
+        var lat = mapViewerInitialState.latitude;
+        var lng = mapViewerInitialState.longitude;
+        handleViewportChange({
+          latitude: lat,
+          longitude: lng,
+          zoom: 5,
+        });
+      }
+    }
+  }, [mapViewerInitialState.recievedLocationFromUser]);
 
   useEffect(() => {
     if (mapRef) {
@@ -59,4 +99,9 @@ function Map(props) {
   );
 }
 
-export default Map;
+export default connect(
+  store => ({
+    mapViewerInitialState: store.mapViewerInitialState,
+  }),
+  {},
+)(Map);

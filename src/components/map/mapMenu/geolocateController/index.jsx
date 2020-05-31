@@ -20,6 +20,7 @@ function GeolocateController() {
         trackUserLocation={true}
         // style={geolocateStyle}
         className="absolute mt12 ml12 z1"
+        label="Geolocate"
         // onGeolocate={onGeolocate}
       />
     </React.Fragment>

@@ -1,43 +1,37 @@
-.contentContainer
-{
-    position: relative;
-    height:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:#fff;
-    margin-top:70px;
+.contentContainer {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-top: 70px;
 }
-.contentContainer > .contentMain
-{
-    text-align: center;
+.contentContainer > .contentMain {
+  text-align: center;
 }
-.contentContainer > .contentMain > .head
-{
-    font-family:CeraproMedium;
-    font-size: 50px;
-    color: #e3e7ee;
-    line-height: 0.6em;
-
+.contentContainer > .contentMain > .head {
+  font-family: CeraproMedium;
+  font-size: 50px;
+  color: #e3e7ee;
+  line-height: 0.6em;
 }
 
 /* rgba(227, 231, 238, 0.842); */
 /* rgba(226, 229, 235, 0.842); */
 /* rgba(219, 222, 228, 0.842) */
-.contentContainer >.contentMain > .followUp
-{   
-    margin-top:35px;
-    color: rgba(208, 212, 219, 0.842);
-    font-family:CeraproMedium;
-    font-size: 21px;
-    line-height: 1.9em;
+.contentContainer > .contentMain > .followUp {
+  margin-top: 35px;
+  color: rgba(208, 212, 219, 0.842);
+  font-family: CeraproMedium;
+  font-size: 21px;
+  line-height: 1.9em;
 }
 
-.contentContainer >.contentMain > .mappingButton > Button
-{
-    font-family:CeraproMedium;
-    font-size:20px;
-    margin: 15px;
+.contentContainer > .contentMain > .mappingButton > a > Button {
+  font-family: CeraproMedium;
+  font-size: 20px;
+  margin: 15px;
 
-    /* letter-spacing: 0.03em; */
+  /* letter-spacing: 0.03em; */
 }

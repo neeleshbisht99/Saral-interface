@@ -10,7 +10,6 @@ import { configureSendMessageFormSubmit } from '../../../../store/actions';
 
 function CardBack(props) {
   const { configureSendMessageFormSubmit } = props;
-
   const [reachFormValues, setReachFormValues] = useState({
     name: '',
     email: '',
@@ -39,7 +38,10 @@ function CardBack(props) {
                   onChange={handleChange}
                   label="Name"
                   value={reachFormValues.name}
+                  name="LocationName"
+                  // ref={register({ required: true, maxLength: 50 })}
                 />
+                {/* {errors.Name && <p>This field is required</p>} */}
               </div>
               <div>
                 <ControlText
@@ -47,7 +49,10 @@ function CardBack(props) {
                   onChange={handleChange}
                   label="E-Mail"
                   value={reachFormValues.email}
+                  name="Email"
+                  // ref={register({ required: true, pattern: /^\S+@\S+$/i })}
                 />
+                {/* {errors.Email && <p>This field is required</p>} */}
               </div>
             </div>
             <div className="messageCard">
@@ -56,6 +61,8 @@ function CardBack(props) {
                 label="Message"
                 onChange={handleChange}
                 value={reachFormValues.message}
+                name="Message"
+                // ref={register({ required: true, maxLength: 256 })}
               />
             </div>
           </div>
@@ -91,21 +98,6 @@ function CardBack(props) {
               </span>
             </div>
           </div>
-          {/* <div className="cardLinks">
-            <span className="inline-block color-blue">
-              <Icon name="linkedin" inline={false} size={48} />
-            </span>
-
-            <span className="inline-block color-red">
-              <Icon name="mail" inline={false} size={48} />
-            </span>
-            <span className="inline-block color-blue">
-              <Icon name="twitter" inline={false} size={48} />
-            </span>
-            <span className="inline-block color-black">
-              <Icon name="github" inline={false} size={48} />
-            </span>
-          </div> */}
         </div>
       </div>
     </React.Fragment>
