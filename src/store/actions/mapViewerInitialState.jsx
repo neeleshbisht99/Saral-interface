@@ -38,7 +38,7 @@ export const configureMapViewerInitialState = findLocationData => {
       }
     };
   } else if (address.length != 0) {
-    address = address + ' ' + country;
+    // address = address + ' ' + country;
     console.log('address filled by user');
     return dispatch => {
       try {

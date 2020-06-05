@@ -6,9 +6,10 @@ import { Marker } from 'react-map-gl';
 // import Button from '@mapbox/mr-ui/button';
 // import MapGL, {GeolocateControl} from 'react-map-gl';
 
+import { geocodeAddressToCoordiantes } from '../../googleGeocoder/index.js';
 const MAPBOX_TOKEN =
   'pk.eyJ1IjoibmVlbGVzaGJpc2h0IiwiYSI6ImNrODJtdTB6djAxaHkzbW9kMjljMjU0N24ifQ.QrotGUZ6WIwCEYXXH9MlXw';
-const searchResultsCount = 10;
+const searchResultsCount = 0;
 
 function GeocoderController(props) {
   // const userLocationStatement='';
@@ -26,46 +27,82 @@ function GeocoderController(props) {
   //     props.getUserCoordinates(position.coords);
   // }
 
-  const [GeocoderResultLocation, setGeocoderResultLocation] = useState({
-    latitude: props.viewport.latitude,
-    longitude: props.viewport.longitude,
-    zoom: props.viewport.zoom,
-  });
+  const { mapRef, viewport, handleViewportChange } = props;
 
-  const [
-    geocoderResultLocationMarker,
-    setGeocoderResultLocationMarker,
-  ] = useState(false);
+  // const [GeocoderResultLocation, setGeocoderResultLocation] = useState({
+  //   latitude:viewport.latitude,
+  //   longitude: viewport.longitude,
+  //   zoom:viewport.zoom,
+  // });
+
+  // const [
+  //   geocoderResultLocationMarker,
+  //   setGeocoderResultLocationMarker,
+  // ] = useState(false);
 
   const handleGeocoderViewportChange = newViewport => {
-    const geocoderDefaultOverrides = { transitionDuration: 1000 };
-    props.handleViewportChange({
+    const zoom = 1.45;
+    handleViewportChange({
       ...newViewport,
-      ...geocoderDefaultOverrides,
+      zoom,
     });
   };
 
   const userSelectedGeocoderResult = result => {
-    console.log(result.result);
-    setGeocoderResultLocation({
-      ...GeocoderResultLocation,
-      latitude: result.result.center[1],
-      longitude: result.result.center[0],
-    });
-    setGeocoderResultLocationMarker(true);
-    // console.log(viewport);
+    console.log('insider find user location');
+    const location = result.result.place_name;
+    geocodeAddressToCoordiantes(location)
+      .then(result => {
+        const { lat, lng } = result;
+        const zoom = 16;
+        const newViewport = {
+          latitude: lat,
+          longitude: lng,
+          zoom,
+        };
+        handleViewportChange(newViewport);
+      })
+      .catch(error => {
+        console.log(error);
+      });
   };
 
+  const feature = {
+    type: 'Feature',
+    properties: {
+      title: 'Input location',
+      description: "A large park in Chicago's Austin neighborhood",
+    },
+    geometry: {
+      coordinates: [20.5937, 78.9629],
+      type: 'Point',
+    },
+  };
+
+  function forwardGeocoder(query) {
+    console.log(query);
+    var matchingFeatures = [];
+    feature['place_name'] = query;
+    feature['center'] = feature.geometry.coordinates;
+    feature['place_type'] = ['park'];
+    matchingFeatures.push(feature);
+    return matchingFeatures;
+  }
+
+  function errorOccured() {
+    console.log('inside error');
+  }
   return (
     <React.Fragment>
       <Geocoder
-        mapRef={props.mapRef}
+        mapRef={mapRef}
         onViewportChange={handleGeocoderViewportChange}
         mapboxApiAccessToken={MAPBOX_TOKEN}
         limit={searchResultsCount}
         onResult={userSelectedGeocoderResult}
+        localGeocoder={forwardGeocoder}
       />
-
+      {/* 
       {geocoderResultLocationMarker && (
         <Marker
           latitude={GeocoderResultLocation.latitude}
@@ -73,11 +110,10 @@ function GeocoderController(props) {
           offsetLeft={-20}
           offsetTop={-10}>
           <div>
-            {/* <img src={geocoderResultMarker}/> */}
             <img src="https://img.icons8.com/nolan/64/marker.png" />
           </div>
         </Marker>
-      )}
+      )} */}
     </React.Fragment>
   );
 }
