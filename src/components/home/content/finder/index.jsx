@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import IconText from '@mapbox/mr-ui/icon-text';
+import Icon from '@mapbox/mr-ui/icon';
 import ControlText from '@mapbox/mr-ui/control-text';
 import Button from '@mapbox/mr-ui/button';
 import './index.css';
@@ -44,7 +45,7 @@ function Finder(props) {
                   left: 0,
                   top: 0,
                 }}>
-                <source src={finderVideo} type="video/webm" />
+                {/* <source src={finderVideo} type="video/webm" /> */}
               </video>
             </div>
           </div>
@@ -59,7 +60,9 @@ function Finder(props) {
                   'align-content': 'center',
                   'text-align': 'center',
                 }}>
-                <IconText iconBefore="globe">Find Near Me</IconText>
+                <span className="inline-block color-white">
+                  <Icon name="arrive" inline={true} /> Find Near Me
+                </span>{' '}
               </Button>
             </div>
             <div className="horizontal-line"></div>
@@ -113,7 +116,11 @@ function Finder(props) {
                 onClick={handleLocationFinderSubmit}
                 outline={true}
                 width="full">
-                <IconText iconAfter="arrow-right">Start Mapping</IconText>
+                <span className="inline-block color-blue">
+                  Start Mapping
+                  <Icon name="arrow-right" inline={true} />
+                </span>{' '}
+                {/* <IconText iconAfter="arrow-right">Start Mapping</IconText> */}
               </Button>
             </div>
           </div>

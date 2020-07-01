@@ -1,0 +1,6 @@
+.mapbox-directions-component-keyline {
+  display: none;
+}
+.mapbox-directions-profile.mapbox-directions-component-keyline {
+  display: block;
+}

@@ -16,6 +16,10 @@ const DEFAULT_STATE = {
     addressPresent: false,
     coordinatesPresent: false,
   },
+  pathCoordinates: {
+    initialPoint: [],
+    finalPoint: [],
+  },
 };
 
 export const store = createStore(

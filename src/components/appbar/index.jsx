@@ -35,11 +35,11 @@ function Appbar(props) {
             </a>
           </div>
 
-          <div className="nav-tab">
+          {/* <div className="nav-tab">
             <a href="#" className="nav-links">
               Blog
             </a>
-          </div>
+          </div> */}
 
           <div className="nav-tab add-location-badge">
             {/* <a href="#" className="nav-links"> */}

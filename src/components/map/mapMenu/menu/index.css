@@ -1,0 +1,43 @@
+.mapbox-menu-container {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-top: 50px;
+  width: 239px;
+  height: auto;
+  overflow: hidden;
+}
+.mapbox-menu-container .example-trial {
+  margin-top: 7px;
+  margin-left: 23.5px;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #666;
+  border-radius: 6px;
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 12px;
+  padding: 2px 36px;
+  text-decoration: none;
+  text-align: center;
+  /* text-transform: uppercase; */
+  font-family: CeraproMedium;
+  font-weight: 700;
+}
+.mapbox-menu-container .example-trial:hover,
+.mapbox-menu-container .example-trial:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.mapbox-menu-container .example-trial {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.mapbox-menu-container .example-trial:hover {
+  box-shadow: 0 0 40px 40px #777 inset;
+}

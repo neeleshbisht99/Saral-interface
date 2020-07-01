@@ -1,0 +1,54 @@
+.instructionContainer {
+  margin-top: 5px;
+  /* align-items: center; */
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.instructionButton {
+  text-align: center;
+  width: 220px;
+  height: 30px;
+  background: #273d56;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: CeraproMedium;
+  border-radius: 6px;
+  box-shadow: 0 5px 0px darken(#273d56, 0%);
+  border-bottom: 2px solid darken(#273d56, 3%);
+}
+
+.instructionContainer .ReactCollapse--collapse {
+  /* border: 1px solid rgba(3, 169, 244, 0.3); */
+  border-radius: 10px;
+  /* background-color: rgba(100, 255, 100, 0.1); */
+  transition: height 500ms;
+}
+
+.instructionContainer .ReactCollapse--content {
+  background-color: #f4f7fb;
+  /* overflow-y: scroll; */
+  height: 300px;
+  font-family: CeraproLight;
+  font-size: 13px;
+}
+
+.instructionContainer .ReactCollapse--content .menu-instruction-head {
+  font-family: CeraproBold;
+}
+.instructionContainer .ReactCollapse--content .menu-instruction-content {
+  /* margin-left: 10px; */
+  font-family: CeraproMedium;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 20px;
+}
+.instructionContainer .ReactCollapse--content .menu-instruction-content ul {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+.instructionContainer .collapsedInstructionContainer {
+  /* background: */
+}

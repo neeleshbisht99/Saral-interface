@@ -12,36 +12,10 @@ const MAPBOX_TOKEN =
 const searchResultsCount = 0;
 
 function GeocoderController(props) {
-  // const userLocationStatement='';
-  // function findShopsNearMe()
-  // {
-  //     if (navigator.geolocation) {
-  //       navigator.geolocation.getCurrentPosition(showPosition);
-  //     } else {
-  //        userLocationStatement = "Geolocation is not supported by this browser.";
-  //     }
-  // }
-
-  // function showPosition(position) {
-  //   console.log(position.coords.latitude,position.coords.longitude);
-  //     props.getUserCoordinates(position.coords);
-  // }
-
-  const { mapRef, viewport, handleViewportChange } = props;
-
-  // const [GeocoderResultLocation, setGeocoderResultLocation] = useState({
-  //   latitude:viewport.latitude,
-  //   longitude: viewport.longitude,
-  //   zoom:viewport.zoom,
-  // });
-
-  // const [
-  //   geocoderResultLocationMarker,
-  //   setGeocoderResultLocationMarker,
-  // ] = useState(false);
+  const { mapRef, directionsRef, viewport, handleViewportChange } = props;
 
   const handleGeocoderViewportChange = newViewport => {
-    const zoom = 1.45;
+    const zoom = 13;
     handleViewportChange({
       ...newViewport,
       zoom,
@@ -61,6 +35,7 @@ function GeocoderController(props) {
           zoom,
         };
         handleViewportChange(newViewport);
+        directionsRef.current.setOriginCoordinates([lng, lat]);
       })
       .catch(error => {
         console.log(error);
@@ -96,25 +71,27 @@ function GeocoderController(props) {
     <React.Fragment>
       <Geocoder
         mapRef={mapRef}
-        onViewportChange={handleGeocoderViewportChange}
+        // onViewportChange={handleGeocoderViewportChange}
         mapboxApiAccessToken={MAPBOX_TOKEN}
         limit={searchResultsCount}
         onResult={userSelectedGeocoderResult}
         localGeocoder={forwardGeocoder}
       />
-      {/* 
-      {geocoderResultLocationMarker && (
-        <Marker
-          latitude={GeocoderResultLocation.latitude}
-          longitude={GeocoderResultLocation.longitude}
-          offsetLeft={-20}
-          offsetTop={-10}>
-          <div>
-            <img src="https://img.icons8.com/nolan/64/marker.png" />
-          </div>
-        </Marker>
-      )} */}
     </React.Fragment>
   );
 }
 export default GeocoderController;
+
+/* 
+
+
+check onViewportChange for smooth viewport change
+check react-map-gl-geocoder's index.js line 243
+problem may be in the updated viewport,
+with passing function to onViewportChange, even then the viewport changes,
+
+Default value is good, check example of geocoder on mapbox website for viewport change
+
+check param flyTo
+
+*/
