@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import pollutionVideo from '../../../videos/home-new.webm';
+// import pollutionVideo from '../../../videos/used/home-new.webm';
 import Navbar from './navbar';
 import Content from './content';
 
@@ -22,7 +22,10 @@ function FirstSight(props) {
             left: 0,
             top: 0,
           }}>
-          {/* <source src={pollutionVideo} type="video/webm" /> */}
+          <source
+            src="https://www.dropbox.com/s/ph7h2or1khxfnct/home-new.webm?raw=1"
+            type="video/webm"
+          />
         </video>
         <div className="home-navbar">
           <Navbar />

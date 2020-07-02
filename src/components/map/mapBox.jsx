@@ -38,7 +38,7 @@ function Map(props) {
   const [viewport, setViewport] = useState({
     latitude: 28.633,
     longitude: 77.2194,
-    zoom: 13,
+    zoom: 15,
     bearing: 0,
     pitch: 0,
     transitionDuration: 1000,
@@ -163,7 +163,7 @@ function Map(props) {
         {...viewport}
         width="100%"
         height="100%"
-        minZoom={10} // should be 13
+        minZoom={11} // should be 13
         mapStyle={MAPBOX_STYLE}
         ref={mapRef}
         onViewportChange={handleViewportChange}

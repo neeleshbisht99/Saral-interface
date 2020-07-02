@@ -1,37 +1,35 @@
- .cardFrontReachBanner {
-    width: 100%;
-    border-radius: 5px;
-    background-color: #242836;
-    background-image: url(../../../../img/topography.svg);
-    text-align: center;
-    padding-top:5rem;
-    padding-bottom: 5rem;
-    backface-visibility: hidden;
-    position: absolute;
-    top: 0;
-    /* z-index:10; */
+.cardFrontReachBanner {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #242836;
+  background-image: url(https://www.dropbox.com/s/5w82fzhhacmn7vi/topography.svg?raw=1);
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  /* z-index:10; */
 }
- .cardFrontReachBanner > .heading
-{
-    font-family: CeraproLight, sans-serif;
-    color: #e3e7ee;
-    font-size: 26px;
-    line-height: 1.3em;
-    font-weight: 500;
+.cardFrontReachBanner > .heading {
+  font-family: CeraproLight, sans-serif;
+  color: #e3e7ee;
+  font-size: 26px;
+  line-height: 1.3em;
+  font-weight: 500;
 }
-.cardFrontReachBanner > .para
-{
-    margin-bottom: 0px;
-    font-family: CeraproLight, sans-serif;
-    color: #8a989e;
-    font-size: 19px;
-    line-height: 1.8em;
-    font-weight: 400;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left:6rem;
-    padding-right:6rem;
-} .cardFrontReachBanner > .main-para
-{
-    padding-top: 1rem;
+.cardFrontReachBanner > .para {
+  margin-bottom: 0px;
+  font-family: CeraproLight, sans-serif;
+  color: #8a989e;
+  font-size: 19px;
+  line-height: 1.8em;
+  font-weight: 400;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.cardFrontReachBanner > .main-para {
+  padding-top: 1rem;
 }

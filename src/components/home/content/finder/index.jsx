@@ -4,7 +4,7 @@ import Icon from '@mapbox/mr-ui/icon';
 import ControlText from '@mapbox/mr-ui/control-text';
 import Button from '@mapbox/mr-ui/button';
 import './index.css';
-import finderVideo from '../../../../videos/finder.webm';
+// import finderVideo from '../../../../videos/used/finder.webm';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { configureMapViewerInitialState } from '../../../../store/actions';
@@ -45,7 +45,10 @@ function Finder(props) {
                   left: 0,
                   top: 0,
                 }}>
-                {/* <source src={finderVideo} type="video/webm" /> */}
+                <source
+                  src="https://www.dropbox.com/s/lirwd7t00jcgvi3/finder.webm?raw=1"
+                  type="video/webm"
+                />
               </video>
             </div>
           </div>

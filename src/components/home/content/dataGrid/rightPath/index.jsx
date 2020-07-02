@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import rightPathVideo from '../../../../../videos/rightPath.webm';
+// import rightPathVideo from '../../../../../videos/used/rightPath.webm';
 import Icon from '@mapbox/mr-ui/icon';
 
 function RightPath() {
@@ -37,7 +37,10 @@ function RightPath() {
                 left: 0,
                 top: 0,
               }}>
-              {/* <source src={rightPathVideo} type="video/webm" /> */}
+              <source
+                src="https://www.dropbox.com/s/9uk0s7grz40bjqq/rightPath.webm?raw=1"
+                type="video/webm"
+              />
             </video>
           </div>
         </div>

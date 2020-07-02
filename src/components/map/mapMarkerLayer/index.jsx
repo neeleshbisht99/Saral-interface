@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactMapGL, { Marker, Source, Layer } from 'react-map-gl';
-import userResult from '../../../img/userResult.svg';
-import file from '../../../files/earthquakes.geojson';
+// import markerData from '../../../files/marker_data.geojson';
 import {
   clusterLayer,
   clusterCountLayer,
@@ -28,8 +27,8 @@ function MapMarkerLayer(props) {
       <Source
         id="earthquakes"
         type="geojson"
-        // data="https://docs.mapbox.com/mapbox-gl-js/assets/earthquakes.geojson"
-        data={file}
+        data="https://www.dropbox.com/s/mgj4anwjal532zx/marker_data.geojson?raw=1"
+        // data={markerData}
         cluster={true}
         clusterMaxZoom={16}
         clusterRadius={100}

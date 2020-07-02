@@ -21,7 +21,7 @@ function Reviews(props) {
       {reviews.map((review, _i) => (
         <div key={_i} className="item" style={{ ...itemStyle }}>
           <div className="reviewImageContainer">
-            {/* <img src={review.imageUrl} className="reviewerImg" /> */}
+            <img src={review.imageUrl} className="reviewerImg" />
           </div>
           <div className="reviewContentContainer">
             <div className="reviewContenthead">

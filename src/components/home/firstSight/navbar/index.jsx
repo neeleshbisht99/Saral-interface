@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../../img/logo.svg';
+// import logo from '../../../../img/logo.svg';
 import './index.css';
 import { connect } from 'react-redux';
 import { configureAddLocationModalBool } from '../../../../store/actions';
@@ -53,7 +53,7 @@ function Navbar(props) {
 
         <div className="nav-header">
           <a href="#" className="nav-title">
-            <img src={logo} />
+            <img src="https://www.dropbox.com/s/k46pilwenemt5sj/logo.svg?raw=1" />
           </a>
         </div>
         {/* toogle button */}

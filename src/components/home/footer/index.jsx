@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../img/logoBlack.svg';
+// import logo from '../../../img/logoBlack.svg';
 import './index.css';
 import Icon from '@mapbox/mr-ui/icon';
 
@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer-hr-line"></div>
       <div className="footerContainer">
         <div className="logo">
-          <img src={logo} />
+          <img src="https://www.dropbox.com/s/fbn65gc4jgmmzhv/logoBlack.svg?raw=1" />
           <br />
           We{' '}
           <span className="inline-block color-blue">
