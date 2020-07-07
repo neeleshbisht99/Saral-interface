@@ -36,9 +36,9 @@ function Map(props) {
 
   const [viewportMarkers, setViewportMarkers] = useState([]);
   const [viewport, setViewport] = useState({
-    latitude: 28.633,
-    longitude: 77.2194,
-    zoom: 15,
+    latitude: 26.846643326383706,
+    longitude: 80.94626462028312,
+    zoom: 12,
     bearing: 0,
     pitch: 0,
     transitionDuration: 1000,
@@ -103,6 +103,10 @@ function Map(props) {
       */
     setTimeout(function () {
       $('.mapboxgl-ctrl-geolocate').click();
+      directionsRef.current.setOriginCoordinates([
+        80.94626462028312,
+        26.846643326383706,
+      ]);
     }, 1000);
   };
   const handleViewportMarkersChange = gatheredMarkers => {

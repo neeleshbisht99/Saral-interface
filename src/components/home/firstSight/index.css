@@ -1,49 +1,49 @@
 .mainContainer {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    border-radius: 5px;
-    background-attachment: scroll;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  border-radius: 5px;
+  background-attachment: scroll;
+  overflow: hidden;
 }
 
 .mainContainer video {
-    min-width: 100%;
-    min-height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .mainContainer .overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-    background-image:linear-gradient(180deg, rgba(27, 33, 41, 0.87), rgba(27, 33, 41, 0.87));;
-    opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background-image: linear-gradient(
+    180deg,
+    rgba(27, 33, 41, 0.87),
+    rgba(27, 33, 41, 0.87)
+  );
+  opacity: 0.8;
 }
-.home-navbar
-{
-    position:absolute;
-    top:30px;
-    left:0;
-    z-index:20;
-    width:100%;
-    height:60px;
+.home-navbar {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 60px;
 }
 
-.home-content
-{
-   z-index:20;
-   width: 940px; /*can be in percentage also.*/
-   height:100%;
-   margin: auto;
-   position: relative;
-
-
+.home-content {
+  z-index: 20;
+  width: 940px; /*can be in percentage also.*/
+  height: 100%;
+  margin: auto;
+  position: relative;
 }
 
 /* rgba(27, 33, 41, 0.87) */

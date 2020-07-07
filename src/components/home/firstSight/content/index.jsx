@@ -1,7 +1,13 @@
 import React from 'react';
 import './index.css';
 import Button from '@mapbox/mr-ui/button';
-function Content() {
+import { withRouter } from 'react-router-dom';
+
+function Content(props) {
+  function handleLocationFinderSubmit() {
+    props.history.push('/mapViewer');
+  }
+
   return (
     <React.Fragment>
       <div className="contentContainer">
@@ -13,26 +19,23 @@ function Content() {
             Joining hands to create a better future
           </div>
           <div className="mappingButton">
-            <a href="mapViewer">
-              <Button
-                passthroughProps={{ 'aria-label': 'Primary' }}
-                size="large"
-                width="large">
-                Let's make it !
-              </Button>
-            </a>
-            <a href="#">
-              <Button
-                passthroughProps={{ 'aria-label': 'Primary' }}
-                size="large"
-                width="large">
-                Spread it out !
-              </Button>
-            </a>
+            <Button
+              onClick={handleLocationFinderSubmit}
+              passthroughProps={{ 'aria-label': 'Primary' }}
+              size="large"
+              width="large">
+              Let's make it !
+            </Button>
+            <Button
+              passthroughProps={{ 'aria-label': 'Primary' }}
+              size="large"
+              width="large">
+              Spread it out !
+            </Button>
           </div>
         </div>
       </div>
     </React.Fragment>
   );
 }
-export default Content;
+export default withRouter(Content);

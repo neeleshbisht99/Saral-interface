@@ -176,7 +176,7 @@ function AddLocation(props) {
                   id="name"
                   label="Add images"
                   optional={true}
-                  noAuto={true}
+                  // noAuto={true}
                   disabled={true}
                   onChange={
                     (/* value, id */) => {

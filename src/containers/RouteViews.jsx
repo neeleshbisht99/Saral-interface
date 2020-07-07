@@ -5,7 +5,7 @@ import MapPage from '../pages/MapPage';
 
 const RouteViews = () => (
   <React.Fragment>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route exact path="/" render={() => <HomePage />} />
         <Route exact path="/mapviewer" render={() => <MapPage />} />

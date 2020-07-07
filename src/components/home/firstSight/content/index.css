@@ -28,7 +28,7 @@
   line-height: 1.9em;
 }
 
-.contentContainer > .contentMain > .mappingButton > a > Button {
+.contentContainer > .contentMain > .mappingButton Button {
   font-family: CeraproLight;
   font-size: 20px;
   margin: 15px;
