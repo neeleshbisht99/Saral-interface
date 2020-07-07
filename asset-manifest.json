@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/Saral-interface/static/css/main.e635e828.chunk.css",
-    "main.js": "/Saral-interface/static/js/main.878b3ef0.chunk.js",
-    "main.js.map": "/Saral-interface/static/js/main.878b3ef0.chunk.js.map",
+    "main.css": "/Saral-interface/static/css/main.86ae33b8.chunk.css",
+    "main.js": "/Saral-interface/static/js/main.400b2247.chunk.js",
+    "main.js.map": "/Saral-interface/static/js/main.400b2247.chunk.js.map",
     "runtime-main.js": "/Saral-interface/static/js/runtime-main.cb9b55e6.js",
     "runtime-main.js.map": "/Saral-interface/static/js/runtime-main.cb9b55e6.js.map",
     "static/css/2.c68f5276.chunk.css": "/Saral-interface/static/css/2.c68f5276.chunk.css",
-    "static/js/2.e9061ff5.chunk.js": "/Saral-interface/static/js/2.e9061ff5.chunk.js",
-    "static/js/2.e9061ff5.chunk.js.map": "/Saral-interface/static/js/2.e9061ff5.chunk.js.map",
+    "static/js/2.c3e71df4.chunk.js": "/Saral-interface/static/js/2.c3e71df4.chunk.js",
+    "static/js/2.c3e71df4.chunk.js.map": "/Saral-interface/static/js/2.c3e71df4.chunk.js.map",
     "index.html": "/Saral-interface/index.html",
-    "precache-manifest.02a3b0088e4b24faf2a27d888cea3e40.js": "/Saral-interface/precache-manifest.02a3b0088e4b24faf2a27d888cea3e40.js",
+    "precache-manifest.6833f2ea6fb6ab6c44c3fb98e5f74d7d.js": "/Saral-interface/precache-manifest.6833f2ea6fb6ab6c44c3fb98e5f74d7d.js",
     "service-worker.js": "/Saral-interface/service-worker.js",
     "static/css/2.c68f5276.chunk.css.map": "/Saral-interface/static/css/2.c68f5276.chunk.css.map",
-    "static/css/main.e635e828.chunk.css.map": "/Saral-interface/static/css/main.e635e828.chunk.css.map",
-    "static/js/2.e9061ff5.chunk.js.LICENSE.txt": "/Saral-interface/static/js/2.e9061ff5.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/Saral-interface/static/media/Cera Pro Medium.afe6902a.otf"
+    "static/css/main.86ae33b8.chunk.css.map": "/Saral-interface/static/css/main.86ae33b8.chunk.css.map",
+    "static/js/2.c3e71df4.chunk.js.LICENSE.txt": "/Saral-interface/static/js/2.c3e71df4.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Saral-interface/static/media/Cera Pro Medium.afe6902a.otf",
+    "static/media/marker_data.geojson": "/Saral-interface/static/media/marker_data.1cbe3f33.geojson"
   },
   "entrypoints": [
     "static/js/runtime-main.cb9b55e6.js",
     "static/css/2.c68f5276.chunk.css",
-    "static/js/2.e9061ff5.chunk.js",
-    "static/css/main.e635e828.chunk.css",
-    "static/js/main.878b3ef0.chunk.js"
+    "static/js/2.c3e71df4.chunk.js",
+    "static/css/main.86ae33b8.chunk.css",
+    "static/js/main.400b2247.chunk.js"
   ]
 }
