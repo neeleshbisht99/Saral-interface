@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://neeleshbisht99.github.io/Saral-interface/">
-    <img src="https://www.dropbox.com/s/fbn65gc4jgmmzhv/logoBlack.svg?dl=0" alt="version" />
+    <img src="docs/img/logoBlack.svg" alt="version" />
   </a>
 </p>
 
@@ -11,7 +11,7 @@
 
 ## See it <a href="https://neeleshbisht99.github.io/Saral-interface/">live</a> here.
 
-<h4 align="left">| <a href="https://github.com/neeleshbisht99/Saral-interface/blob/master/README.md">Documentation</a></h4>
+<h2 align="left">| <a href="https://github.com/neeleshbisht99/Saral-interface/blob/master/README.md">Documentation</a></h2>
 
 ## Table of Contents
 
@@ -31,11 +31,11 @@
 ## Features
 
 - Navigate around your location and to any other place around the globe using the finder.
-  ![finder](https://drive.google.com/thumbnail?id=1oGcNiXAlGyIpIefoB7x5NdXo1WmR8Ghs)
+  ![finder](docs/img/finder.png)
 - Add location of the trash-bin you are familiar with.
-  ![addLocation](https://drive.google.com/thumbnail?id=1DhQFIqknVLlnwYQm8-DV_6AfQOKyBg6O)
+  ![addLocation](docs/img/addLocation.png)
 - It creates a path from your location to the destination along with step by step instructions.
-  ![path](https://drive.google.com/thumbnail?id=19lPIPqtXDO4z-BNnzsVg9LXAilJpcS_R)
+  ![path](docs/img/path.png)
 - Creates shortest path for you in following ways :
   - Driving
   - walking
