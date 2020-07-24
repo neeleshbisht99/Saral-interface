@@ -1,68 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://neeleshbisht99.github.io/Saral-interface/">
+    <img src="https://www.dropbox.com/s/fbn65gc4jgmmzhv/logoBlack.svg?raw=1" alt="version" />
+  </a>
+</p>
 
-## Available Scripts
+:rocket: saral is a web based social awareness platform where users can identify nearest trash-bins around them.
+:rocket: Born out of the need/problem in India to identify trashbins in a unknown place, with a mission to spread cleanliness.
+:earth_asia: Utilizing technology for social good.
+:computer: Built on [React](http://facebook.github.io/react/) and [react-map-gl](https://github.com/visgl/react-map-gl).
 
-In the project directory, you can run:
+## See it <a href="https://neeleshbisht99.github.io/Saral-interface/">live</a> here.
 
-### `yarn start`
+<h4 align="left">| <a href="https://github.com/neeleshbisht99/Saral-interface/blob/master/README.md">Documentation</a></h4>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [Installation](#installation)
+- [Features](#features)
+- [Example](#example)
+- [Support](#support)
 
-### `yarn test`
+## Installation
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+ git clone https://github.com/neeleshbisht99/react-map-gl-directions.git
 
-### `yarn build`
+ cd Saral-interface && npm install
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Navigate around your location and to any other place around the globe using the finder.
+  ![finder](https://drive.google.com/thumbnail?id=1oGcNiXAlGyIpIefoB7x5NdXo1WmR8Ghs)
+- Add location of the trash-bin you are familiar with.
+  ![addLocation](https://drive.google.com/thumbnail?id=1DhQFIqknVLlnwYQm8-DV_6AfQOKyBg6O)
+- It creates a path from your location to the destination along with step by step instructions.
+  ![path](https://drive.google.com/thumbnail?id=19lPIPqtXDO4z-BNnzsVg9LXAilJpcS_R)
+- Creates shortest path for you in following ways :
+  - Driving
+  - walking
+  - Cycling
+  - Traffic
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Example
 
-### `yarn eject`
+![react-map-gl-directions example screenshot](react-map-gl-directions.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Support
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Reach out to me at one of the following places!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Linkedin at <a href="https://www.linkedin.com/in/neelesh-bisht-398061b4/" target="_blank">`Neelesh Bisht`</a>
+- Mail at <a href="mailto:neelesbisht99@gmail.com" target="_blank">`neeleshbisht99@gmail.com`</a>
+- Twitter at <a href="https://twitter.com/neeleshbisht99" target="_blank">`@neeleshbisht99`</a>
