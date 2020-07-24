@@ -4,14 +4,15 @@
   </a>
 </p>
 
-> :rocket: saral is a web based social awareness platform where users can identify nearest trash-bins around them.
-> :rocket: Born out of the need/problem in India to identify trashbins in a unknown place, with a mission to spread cleanliness.
-> :earth_asia: Utilizing technology for social good.
+> saral is a web based social awareness platform where users can identify nearest trash-bins around them.
+>
+> Born out of the need/problem in India to identify trashbins in a unknown place, with a mission to spread cleanliness.
+>
+> Utilizing technology for social good.
+>
 > :computer: Built on [React](http://facebook.github.io/react/) and [react-map-gl](https://github.com/visgl/react-map-gl).
 
-## See it <a href="https://neeleshbisht99.github.io/Saral-interface/">live</a> here.
-
-<h2 align="left">| <a href="https://github.com/neeleshbisht99/Saral-interface/blob/master/README.md">Documentation</a></h2>
+## :rocket: See it <a href="https://neeleshbisht99.github.io/Saral-interface/">live</a> here.
 
 ## Table of Contents
 
@@ -32,10 +33,13 @@
 
 - Navigate around your location and to any other place around the globe using the finder.
   ![finder](docs/img/finder.png)
+
 - Add location of the trash-bin you are familiar with.
   ![addLocation](docs/img/addLocation.png)
+
 - It creates a path from your location to the destination along with step by step instructions.
   ![path](docs/img/path.png)
+
 - Creates shortest path for you in following ways :
   - Driving
   - walking
