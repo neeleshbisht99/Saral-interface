@@ -1,13 +1,13 @@
 <p align="center">
   <a href="https://neeleshbisht99.github.io/Saral-interface/">
-    <img src="https://www.dropbox.com/s/fbn65gc4jgmmzhv/logoBlack.svg?raw=1" alt="version" />
+    <img src="https://www.dropbox.com/s/fbn65gc4jgmmzhv/logoBlack.svg?dl=0" alt="version" />
   </a>
 </p>
 
-:rocket: saral is a web based social awareness platform where users can identify nearest trash-bins around them.
-:rocket: Born out of the need/problem in India to identify trashbins in a unknown place, with a mission to spread cleanliness.
-:earth_asia: Utilizing technology for social good.
-:computer: Built on [React](http://facebook.github.io/react/) and [react-map-gl](https://github.com/visgl/react-map-gl).
+> :rocket: saral is a web based social awareness platform where users can identify nearest trash-bins around them.
+> :rocket: Born out of the need/problem in India to identify trashbins in a unknown place, with a mission to spread cleanliness.
+> :earth_asia: Utilizing technology for social good.
+> :computer: Built on [React](http://facebook.github.io/react/) and [react-map-gl](https://github.com/visgl/react-map-gl).
 
 ## See it <a href="https://neeleshbisht99.github.io/Saral-interface/">live</a> here.
 
