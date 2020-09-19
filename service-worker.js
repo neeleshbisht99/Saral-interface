@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Saral-interface/precache-manifest.6833f2ea6fb6ab6c44c3fb98e5f74d7d.js"
+  "/Saral-interface/precache-manifest.cfcc6033720bc5ba2cce45c6c3047c23.js"
 );
 
 self.addEventListener('message', (event) => {
