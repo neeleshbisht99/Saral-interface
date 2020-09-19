@@ -8,10 +8,6 @@ function FirstSight(props) {
   return (
     <React.Fragment>
       <div className="mainContainer">
-        <div className="home-content">
-          <Content />
-        </div>
-        <div className="overlay"></div>
         <video
           autoPlay
           muted
@@ -27,6 +23,10 @@ function FirstSight(props) {
             type="video/webm"
           />
         </video>
+        <div className="overlay"></div>
+        <div className="home-content">
+          <Content />
+        </div>
         <div className="home-navbar">
           <Navbar />
         </div>

@@ -21,7 +21,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 10;
+  z-index: 1;
   background-image: linear-gradient(
     180deg,
     rgba(27, 33, 41, 0.87),
@@ -33,13 +33,13 @@
   position: absolute;
   top: 30px;
   left: 0;
-  z-index: 20;
+  z-index: 1;
   width: 100%;
   height: 60px;
 }
 
 .home-content {
-  z-index: 20;
+  z-index: 1;
   width: 940px; /*can be in percentage also.*/
   height: 100%;
   margin: auto;

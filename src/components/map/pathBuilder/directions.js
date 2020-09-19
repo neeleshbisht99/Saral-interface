@@ -98,13 +98,13 @@ class Directions extends PureComponent {
     this.directions.on('error', this.handleError);
   };
   unsubscribeEvents = () => {
-    this.directions.off('clear', this.handleClear);
-    this.directions.off('loading', this.handleLoading);
-    this.directions.off('profile', this.handleProfile);
-    this.directions.off('origin', this.handleOrigin);
-    this.directions.off('destination', this.handleDestination);
-    this.directions.off('route', this.handleRoute);
-    this.directions.off('error', this.handleError);
+    // this.directions.off('clear', this.handleClear);
+    // this.directions.off('loading', this.handleLoading);
+    // this.directions.off('profile', this.handleProfile);
+    // this.directions.off('origin', this.handleOrigin);
+    // this.directions.off('destination', this.handleDestination);
+    // this.directions.off('route', this.handleRoute);
+    // this.directions.off('error', this.handleError);
   };
 
   removeDirections = () => {
